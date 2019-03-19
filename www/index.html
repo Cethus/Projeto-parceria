@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<div class='container'>
+<div class='jumbotron' >
           <div class="row">
             <div class="col-md-12">
                 <h1>Calcule seu Metabolismo</h1>
@@ -51,9 +51,10 @@
                   <div class="row">
                         <div class="col-md-6">
                             <div class="form-group"> 
-                              <br>
+                               <label> Voce é ? </label>
+                              <br>                              
                               <select name="text">
-                            <option>Voce é ?</option>    
+                            <option>----</option>    
                             <option value="1.2">Sedentário </option>
                             <option value="1.375">Levemente Ativo </option>
                             <option value="1.55">Moderadamente Ativo </option>
@@ -62,18 +63,25 @@
                               </select>
                             </div>
                         </div>
-                  </div>
-
-
-        <div class="row offiset">
-        <div class="col-md-12">
-          <div align="center">
-          <br>
-          <button type="submit" name="button" class="btn btn-success ">Calcular</button>
-        </div>
-      </div>
-      </div>
-                  <div class="row">
+                        <div class="col-md-6">
+                               <label> Sexo: </label>
+                              <br>                              
+                              <select name="text">
+                            <option>----</option>    
+                            <option value="H">Homem </option>
+                            <option value="M">Mulher </option>
+                              </select>
+                            </div>
+                        </div>
+                                <div class="row offiset">
+                        <div class="col-md-12">
+                           <div align="center">
+                              <br>
+                               <button type="submit" name="button" class="btn btn-success ">Calcular</button>
+                        </div>
+                          </div>
+                             </div>
+                        <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
                               <br>
@@ -82,5 +90,7 @@
                             </div>
                         </div>
                   </div>
+                  </div>
+
 </body>
 </html>
