@@ -13,37 +13,36 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
-<body>
-<div class='jumbotron' >
+<body>         
+        <div class="container">  
           <div class="row">
-            <div class="col-md-12">
-                <h1>Calcule seu Metabolismo</h1>
-            </div>
-          </div>
+                  <div class="col-md-12">
+                     <h1 id="titulo">Calcule seu Metabolismo</h1>
+                  </div>
           <form>
                   <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-8">
                             <div class="form-group">
                               <br>
-                                <label for="nome">*Digite sua Altura: </label>
+                                <label for="nome" id="label">*Digite sua Altura: </label>
                                 <input type="text" name="nome" class="form-control" id="nome">
                             </div>
                       </div>
                   </div>
                   <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="form-group"> 
                               <br>
-                              <label for="end">*Digite seu Peso: </label>
+                              <label for="end" id="label">*Digite seu Peso: </label>
                               <input type="text" class="form-control" id="end">
                             </div>
                         </div>
                   </div>
                    <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="form-group"> 
                               <br>
-                              <label for="end">*Digite sua idade: </label>
+                              <label for="end" id="label">*Digite sua idade: </label>
                               <input type="number" class="form-control" id="end">
                             </div>
                         </div>
@@ -51,7 +50,7 @@
                   <div class="row">
                         <div class="col-md-6">
                             <div class="form-group"> 
-                               <label> Voce é ? </label>
+                               <label id="label"> Voce é ? </label>
                               <br>                              
                               <select name="text">
                             <option>----</option>    
@@ -64,7 +63,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                               <label> Sexo: </label>
+                               <label id="label"> Sexo: </label>
                               <br>                              
                               <select name="text">
                             <option>----</option>    
@@ -77,20 +76,20 @@
                         <div class="col-md-12">
                            <div align="center">
                               <br>
-                               <button type="submit" name="button" class="btn btn-success ">Calcular</button>
+                               <button type="submit" name="button" class="btn btn-danger btn">Calcular</button>
                         </div>
                           </div>
                              </div>
                         <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="form-group">
                               <br>
-                              <label for="end">O Resultado é:  </label>
+                              <label for="end" id="label">O Resultado é:  </label>
                               <input type="text" class="form-control" id="end" readonly>
                             </div>
                         </div>
                   </div>
-                  </div>
+</body>
 
 </body>
 </html>
