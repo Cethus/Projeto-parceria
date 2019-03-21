@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<div class='container'>
+<div class='jumbotron' >
           <div class="row">
             <div class="col-md-12">
                 <h1>Calcule seu Metabolismo</h1>
@@ -25,8 +25,8 @@
                       <div class="col-md-12">
                             <div class="form-group">
                               <br>
-                                <label for="nome">*Digite sua Altura: </label>
-                                <input type="text" name="nome" class="form-control" id="nome">
+                                <label>*Digite sua Altura: </label>
+                                <input type="text" name="nome" class="form-control" id="alt">
                             </div>
                       </div>
                   </div>
@@ -34,27 +34,71 @@
                         <div class="col-md-12">
                             <div class="form-group"> 
                               <br>
-                              <label for="end">*Digite seu Peso: </label>
-                              <input type="text" class="form-control" id="end">
+                              <label>*Digite seu Peso: </label>
+                              <input type="text" class="form-control" id="peso">
                             </div>
                         </div>
                   </div>
-        <div class="row offiset">
-        <div class="col-md-12">
-          <div align="center">
-          <br>
-          <button type="submit" name="button" class="btn btn-success ">Calcular</button>
-        </div>
-      </div>
-      </div>
+                   <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group"> 
+                              <br>
+                              <label>*Digite sua idade: </label>
+                              <input type="number" class="form-control" id="idade">
+                            </div>
+                        </div>
+                  </div>
                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"> 
+                               <label> Voce é ? </label>
+                              <br>                              
+                              <select name="text">
+                            <option>----</option>    
+                            <option value="1.2">Sedentário </option>
+                            <option value="1.375">Levemente Ativo </option>
+                            <option value="1.55">Moderadamente Ativo </option>
+                            <option value="1.725">Altamente Ativo </option>
+                            <option value="1.9">Extremamente Ativo </option>
+                              </select>
+                            
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-xs-12">
+                               <label> Sexo: </label>
+                              <br>   
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-xs-12">                           
+                              <label>
+                              <input type="radio"  id="masc"> Masculino
+                              </label>
+                              <label>
+                              <input type="radio"  id="fem"> Feminino
+                              </label>
+                            </div>
+                        </div>
+                                <div class="row offiset">
+                        <div class="col-md-12">
+                           <div align="center">
+                              <br>
+                               <button type="submit" name="button" class="btn btn-success id="calc">Calcular</button>
+                        </div>
+                          </div>
+                             </div>
+                        <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
                               <br>
                               <label for="end">O Resultado é:  </label>
-                              <input type="text" class="form-control" id="end" readonly>
+                              <input type="text" class="form-control" id="res" readonly>
                             </div>
                         </div>
                   </div>
+                  </div>
+
 </body>
 </html>
