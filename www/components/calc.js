@@ -1,22 +1,22 @@
 
-$(document).on('click','#calc',function(){
+$(document).on("click", "#calc", function(){
   var altura = $("#alt").val();
   var peso = $("#peso").val();
   var idade = $("#idade").val();
   var tipo = $("#tipo").val();
-  var sexoM = $("input[id='sexo1']:checked").val();
-  var sexoF = $("input[id='sexo2']:checked").val();
+  var sexo = $("#sexo").val();
   var res;
-  if(sexoM == "H")
+  
+  if(sexo == "feminino")
   {
-    res =parseFloat(tipo)*(66 + (13.7*parseFloat(peso))+ (5*parseFloat(altura))- (6.8*parseFloat(idade)));
+    res = tipo * (66 + (13.7 * peso)+ (5 * altura) - (6.8 * idade));
   }
-  else if(sexoF == "M")
+  else if(sexo == "masculino")
   {
-    res =parseFloat(tipo)*(65.5 + (9.6*parseFloat(peso))+ (1.8*parseFloat(altura))- (4.7*parseFloat(idade)));
-  }
+    res = tipo * (65.5 + (9.6 * peso)+ (1.8 * altura) - (4.7 * idade));
+  } 
 
-  $("#res").val(res);
+  $("#res").val(res.toString());
 
 });
 
