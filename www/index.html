@@ -15,91 +15,85 @@
 
 </head>
 <body>
-<div class='jumbotron' >
-          <div class="row">
-            <div class="col-md-12">
-                <h1>Calcule seu Metabolismo</h1>
-            </div>
-          </div>
-          <form>
-                  <div class="row">
-                      <div class="col-md-12">
-                            <div class="form-group">
-                              <br>
-                                <label>*Digite sua Altura: </label>
-                                <input type="text" name="nome" class="form-control" id="alt">
-                            </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group"> 
-                              <br>
-                              <label>*Digite seu Peso: </label>
-                              <input type="text" class="form-control" id="peso">
-                            </div>
-                        </div>
-                  </div>
-                   <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group"> 
-                              <br>
-                              <label>*Digite sua idade: </label>
-                              <input type="number" class="form-control" id="idade">
-                            </div>
-                        </div>
-                  </div>
-                  <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group"> 
-                               <label> Voce é ? </label>
-                              <br>                              
-                              <select name="text"  id="tipo">
-                            <option>----</option>    
-                            <option value="1.2">Sedentário </option>
-                            <option value="1.375">Levemente Ativo </option>
-                            <option value="1.55">Moderadamente Ativo </option>
-                            <option value="1.725">Altamente Ativo </option>
-                            <option value="1.9">Extremamente Ativo </option>
-                              </select>
-                            
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-xs-12">
-                               <label> Sexo: </label>
-                              <br>   
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-xs-12">                           
-                              <label>
-                              <input type="radio" value="H"  id="sexo1"> Masculino
-                              </label>
-                              <label>
-                              <input type="radio" value="M" id="sexo2"> Feminino
-                              </label>
-                            </div>
-                        </div>
-                                <div class="row offiset">
-                        <div class="col-md-12">
-                           <div align="center">
-                              <br>
-                               <button type="submit" name="button" class="btn btn-success" id="calc">Calcular</button>
-                        </div>
-                          </div>
-                             </div>
-                        <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                              <br>
-                              <label for="end">O Resultado é:  </label>
-                              <input type="text" class="form-control" id="res" readonly>
-                            </div>
-                        </div>
-                  </div>
-                  </div>
+  <div class="container">
 
+    <div class="row">
+
+      <div class="col-xs-12">
+        <h1 id="titulo">Calcule seu Metabolismo</h1>
+      </div>
+
+    </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Digite seu Nome:</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Digite sua Altura:</label>
+          <input type="number" step="any" class="form-control" id="alt">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Digite seu peso:</label>
+          <input type="number" step="any" class="form-control" id="peso">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Digite sua idade:</label>
+          <input type="number" class="form-control" id="idade">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Você é:</label>
+          <select class="form-control" id="tipo">
+            <option value="" selected>Selecione</option>
+            <option value="1.2">Sedentário </option>
+            <option value="1.375">Levemente Ativo </option>
+            <option value="1.55">Moderadamente Ativo </option>
+            <option value="1.725">Altamente Ativo </option>
+            <option value="1.9">Extremamente Ativo </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Sexo:</label>
+          <select class="form-control" id="sexo">
+            <option value="" selected>Selecione</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+          </select>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success btn-block" id="calc">Calcular</div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="textfield" class="form-control" id="res" readonly>
+        </div>
+      </div>
+
+  </div>
 </body>
 </html>
